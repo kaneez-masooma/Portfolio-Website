@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-body">
+  <header class="navbar">
+    <h2 class="logo">K.Masooma</h2>
+    <i class="menu-icon" id="menu-icon">&#9776;</i> 
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="education.html">Academia</a>
+      <a href="skills.html">Skillset</a>
+      <a href="project.html" class="active">Projects</a>
+      <a href="contact.html">Connect</a>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h1 class="section-title">My Projects</h1>
+    <p class="section-intro">
+      Here are some of the projects I’ve worked on as part of my learning journey.
+    </p>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="Capture.JPG" alt="Portfolio Project">
+        <h3>My Portfolio Website</h3>
+        <p>
+          This is my first project — a personal portfolio website built with HTML and CSS. 
+          It showcases my skills, education, and projects in a clean and modern way.
+        </p>
+        <a href="index.html" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="coming.webp" alt="Upcoming Project">
+        <h3>Coming Soon...</h3>
+        <p>
+          I’m currently working on my next project — something exciting that uses JavaScript 
+          and responsive design. Stay tuned!
+        </p>
+        <a href="#" class="btn disabled">In Progress</a>
+      </div>
+
+    </div>
+  </section>
+   <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const nav = document.querySelector('nav');
+
+  menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
+</script>
+</body>
+<footer class="footer">
+  <p>Thank you for visiting 💖</p>
+  <p>© 2025 Kaneez Masooma | Portfolio Website</p>
+</footer>
+</html>
